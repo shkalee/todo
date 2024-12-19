@@ -90,3 +90,16 @@ body {
  position: absolute ;
  bottom: 0%;
 }
+
+@media(max-width:600px){
+    .midul{
+        width: 100%;
+        float: none;
+
+    }
+    .mid{
+        width: 100%;
+        float: none;
+        
+    }
+}
