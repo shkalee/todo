@@ -6,13 +6,13 @@
 
 body {
   background:linear-gradient(rgb(10, 80, 62),rgb(90, 50, 50),rgb(0, 0, 0));
-   background-repeat: no-repeat;
-   background-size: 9999px 999px ;
+  background-size: 9999px 700px ;
     font-family:Arial, Helvetica, sans-serif;
   }
   
   ul {
     list-style: none;
+    
   }
   
   li {
@@ -20,6 +20,8 @@ body {
     padding: 10px;
     border: 1px solid #ffffff;
     border-radius: 1em;
+    margin-left: -10%;
+    
     
   }
   
@@ -86,20 +88,15 @@ body {
   font-weight: 700;
 }
 
-.po{
- position: absolute ;
- bottom: 0%;
-}
-
-@media(max-width:600px){
-    .midul{
-        width: 100%;
-        float: none;
-
-    }
-    .mid{
-        width: 100%;
-        float: none;
-        
-    }
+@media (max-width :700px) {
+ 
+  #dueDate {
+    font-size: 80%;
+  }
+  .btn {
+    font-size: 80%;
+  }
+  #taskInput{
+    font-size: 80%;
+  }
 }
