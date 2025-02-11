@@ -1,26 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="website icon" type="png" href="00.webp">
+  <link rel="website icon" type="png" href="1.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>todo</title>
   <link rel="stylesheet" href="todo.css">
 </head>
 <body>
    <header>
+    <div class="hh">
     <h1 id="head">Todo List</h1>
-   </header> 
-  <input type="text" id="taskInput" placeholder="Enter tasks">
-  <input type="date" id="dueDate">
-  <button onclick="addTask()" class="btn">Add</button>
-  <ul id="taskList"></ul>
-  <div></div>
+    </div>
+   </header>
+   
+   
+   <div class="xx">
+  
+     <div class="xs">
+          <div class="xss">
+
+          <input type="text" id="taskInput" placeholder="Enter tasks">
+          <input type="date" id="dueDate">
+          <button onclick="addTask()" class="btn5" >Add</button>
+
+          </div>
+          
+        <div class="ssx">
+        <ul id="taskList"></ul>
+        </div>   
+    
+    </div>
+
+  
+  </div> 
+  
   <footer>
     <div class="po">
         <h4 > MADE BY &copy;idhaiL </h4>
-    </div>
-</footer>
+      </div>
+  </footer>
+
+  
   <script src="todo.js"></script>
 </body>
 </html>
