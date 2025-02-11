@@ -10,10 +10,12 @@ function addTask() {
   if (newTask !== '') {
     const listItem = document.createElement('li');
     listItem.innerHTML = `
+    
       <input type="checkbox" class="btn3" onchange="toggleComplete(event)">
       <span class="span" >${newTask}</span>
       <span class="due-date">${dueDate}</span>
-      <button onclick="deleteTask(event)" class="btn2" >delete</button>
+      <button onclick="deleteTask(event)" class="btn2" >delete </button>
+   
     `;
 
     listItem.dataset.dueDate = dueDate;
@@ -60,10 +62,12 @@ function loadTasks() {
     tasks.forEach(task => {
       const listItem = document.createElement('li');
       listItem.innerHTML = `
+        
         <input type="checkbox" class="btn"  ${task.completed ? 'checked' : ''}>
         <span class="text">${task.text}</span>
         <span class="due-date">${task.dueDate}</span>
         <button onclick="deleteTask(event)" class="btn2" >delete</button>
+        
       `;
       listItem.dataset.dueDate = task.dueDate;
       listItem.classList.toggle('completed', task.completed);
